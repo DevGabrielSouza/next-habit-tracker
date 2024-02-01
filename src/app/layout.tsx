@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="pt-br">
-            <body className={inter.className}>{children}</body>
+            <body
+                className={`${inter.className} flex flex-col items-center justify-center min-h-screen py-2`}
+            >
+                {children}
+            </body>
         </html>
     )
 }
